@@ -175,8 +175,6 @@ The model is trained on the **Indian Bovine Breeds Dataset** from Roboflow.
 - Image Size: 224x224 pixels
 - Format: JPG
 
----
-
 ## 🎓 Model Training Details
 
 ### Architecture
@@ -203,7 +201,30 @@ Early Stopping: Patience=10
 
 ---
 
-## 📈 Results & Performance
+## � Screenshots
+
+### 🏠 Application Home - Modern UI with Gradient Header
+![App Home](https://via.placeholder.com/1200x400?text=PashuPehchan+Home+Screen)
+- Beautiful blue gradient header with animations
+- Upload area with drag-and-drop support
+- Model information card
+- Breed directory browser
+
+### 🎯 Prediction Result - 99.1% Confidence
+![Prediction Result](https://via.placeholder.com/1200x600?text=Prediction+Result+Example)
+- High-confidence breed prediction
+- Real-time image display
+- Detailed breed information (origin, milk yield, ICAR code)
+- Characteristics description
+- Progress bar with confidence visualization
+
+### 📚 Breed Directory - Browse All 9 Breeds
+![Breed Directory](https://via.placeholder.com/600x400?text=Breed+Directory)
+- Filter by cattle type (Indigenous/Exotic/Buffalo)
+- Breed origin and classification
+- Color-coded tags for quick identification
+
+---
 
 ### Training Metrics
 ```
@@ -305,7 +326,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **Your Name**
 - GitHub: [@yourusername](https://github.com/yourUsername)
-- Email: your.email@example.com
+- Email: gaya
 
 ---
 
@@ -357,3 +378,63 @@ Solution: Use GPU acceleration or optimize model with TensorFlow Lite
 ---
 
 **Made with ❤️ for agricultural AI**
+
+---
+
+## 📸 How to Add Real Screenshots
+
+Replace placeholder images in README with actual screenshots:
+
+### Capture Screenshot 1: Home Screen
+```bash
+# Run app and take screenshot of home page
+streamlit run app.py
+# Screenshot: Full page (with sidebar and main area)
+# Save as: screenshots/01_app_home.png
+```
+
+### Capture Screenshot 2: Prediction Result
+```bash
+# Upload any cattle/buffalo image
+# Screenshot: Prediction result with 99%+ confidence
+# Save as: screenshots/02_prediction_result.png
+```
+
+### Capture Screenshot 3: Breed Directory
+```bash
+# Click "Browse all breeds" expander
+# Screenshot: Breed directory expanded
+# Save as: screenshots/03_breed_directory.png
+```
+
+Then update README image URLs to:
+```markdown
+![App Home](screenshots/01_app_home.png)
+![Prediction](screenshots/02_prediction_result.png)
+![Directory](screenshots/03_breed_directory.png)
+```
+
+---
+
+## 🏷️ GitHub Topics & Badges
+
+Add to your repository settings:
+
+**Topics:**
+- machine-learning
+- tensorflow
+- deep-learning
+- computer-vision
+- streamlit
+- cattle-classification
+- agriculture-ai
+- image-classification
+- transfer-learning
+
+**Badges to add to README:**
+```markdown
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13%2B-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-red)
+![License](https://img.shields.io/badge/License-MIT-green)
+```
