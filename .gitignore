@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Dataset (too large for GitHub)
+dataset/
+*.zip
+*.tar.gz
+
+# TensorFlow logs and checkpoints
+logs/
+*.ckpt
+*.pb
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS files
+.DS_Store
+Thumbs.db
+*.pyc
+
+# Temporary files
+*.tmp
+*.bak
