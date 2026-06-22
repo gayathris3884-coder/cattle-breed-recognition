@@ -204,14 +204,14 @@ Early Stopping: Patience=10
 ## � Screenshots
 
 ### 🏠 Application Home - Modern UI with Gradient Header
-![App Home](https://via.placeholder.com/1200x400?text=PashuPehchan+Home+Screen)
+![App Home](screenshots/01_app_home.png)
 - Beautiful blue gradient header with animations
 - Upload area with drag-and-drop support
 - Model information card
 - Breed directory browser
 
 ### 🎯 Prediction Result - 99.1% Confidence
-![Prediction Result](https://via.placeholder.com/1200x600?text=Prediction+Result+Example)
+![Prediction Result](screenshots/02_prediction_result.png)
 - High-confidence breed prediction
 - Real-time image display
 - Detailed breed information (origin, milk yield, ICAR code)
@@ -219,7 +219,7 @@ Early Stopping: Patience=10
 - Progress bar with confidence visualization
 
 ### 📚 Breed Directory - Browse All 9 Breeds
-![Breed Directory](https://via.placeholder.com/600x400?text=Breed+Directory)
+![Breed Directory](screenshots/03_breed_directory.png)
 - Filter by cattle type (Indigenous/Exotic/Buffalo)
 - Breed origin and classification
 - Color-coded tags for quick identification
