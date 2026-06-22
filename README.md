@@ -22,7 +22,7 @@
 
 ### 🎯 Use Cases
 - 🚜 **Livestock Management** - Quick breed identification for proper care planning
-- 🏆 **Breeding Programs** - Assist in selective breeding decisions  
+- 🏆 **Breeding Programs** - Assist in selective breeding decisions  
 - 💰 **Market Valuation** - Help determine animal value based on breed
 - 📊 **Farm Records** - Automatic breed categorization for farm databases
 - 🎓 **Agricultural Education** - Learn about Indian bovine breeds
@@ -48,15 +48,15 @@
 
 ```
 ┌─────────────────────┬──────────┐
-│ Metric              │ Value    │
+│ Metric              │ Value    │
 ├─────────────────────┼──────────┤
-│ Test Accuracy       │ 72.0%    │
-│ Validation Accuracy │ 75.92%   │
-│ Training Accuracy   │ 82.5%    │
-│ Model Size          │ ~90 MB   │
-│ Inference Time      │ ~200 ms  │
-│ Total Training Data │ 1,997    │
-│ Supported Breeds    │ 9        │
+│ Test Accuracy       │ 72.0%    │
+│ Validation Accuracy │ 75.92%   │
+│ Training Accuracy   │ 82.5%    │
+│ Model Size          │ ~90 MB   │
+│ Inference Time      │ ~200 ms  │
+│ Total Training Data │ 1,997    │
+│ Supported Breeds    │ 9        │
 └─────────────────────┴──────────┘
 ```
 
@@ -186,30 +186,30 @@ python evaluate.py --model models/fine_tuned_model.keras
 ```
 cattle-breed-recognition/
 │
-├── 📄 app.py                    # Main Streamlit web application
-├── 🎓 train.py                  # Model training pipeline
-├── 🔧 fine_tune.py              # Fine-tuning script
-├── 📊 evaluate.py               # Model evaluation metrics
-├── 🔮 predict.py                # Single image prediction
+├── 📄 app.py                    # Main Streamlit web application
+├── 🎓 train.py                  # Model training pipeline
+├── 🔧 fine_tune.py              # Fine-tuning script
+├── 📊 evaluate.py               # Model evaluation metrics
+├── 🔮 predict.py                # Single image prediction
 │
 ├── 🤖 models/
-│   ├── best_model.keras         # Best checkpoint (peak validation)
-│   └── fine_tuned_model.keras   # Production model (used in app)
+│   ├── best_model.keras         # Best checkpoint (peak validation)
+│   └── fine_tuned_model.keras   # Production model (used in app)
 │
-├── 📸 screenshots/              # Demo screenshots
-│   ├── 01_app_home.png
-│   ├── 02_prediction_result.png
-│   └── 03_breed_directory.png
+├── 📸 screenshots/              # Demo screenshots
+│   ├── 01_app_home.png
+│   ├── 02_prediction_result.png
+│   └── 03_breed_directory.png
 │
-├── 📦 dataset/                  # (Not included - download separately)
-│   ├── train/
-│   ├── valid/
-│   └── test/
+├── 📦 dataset/                  # (Not included - download separately)
+│   ├── train/
+│   ├── valid/
+│   └── test/
 │
-├── 📋 requirements.txt          # Python dependencies
-├── 📖 README.md                 # This file
-├── 🚫 .gitignore                # Git ignore configuration
-└── 📜 LICENSE                   # MIT License
+├── 📋 requirements.txt          # Python dependencies
+├── 📖 README.md                 # This file
+├── 🚫 .gitignore                # Git ignore configuration
+└── 📜 LICENSE                   # MIT License
 ```
 
 ---
@@ -219,17 +219,17 @@ cattle-breed-recognition/
 ### Deep Learning Model
 ```
 Input Image (224×224×3)
-    ↓
+    ↓
 MobileNetV2 Backbone (ImageNet pre-trained)
-    ↓
+    ↓
 Global Average Pooling
-    ↓
+    ↓
 Dense(512) + ReLU + Dropout(0.3)
-    ↓
+    ↓
 Dense(256) + ReLU + Dropout(0.2)
-    ↓
+    ↓
 Dense(9) + Softmax
-    ↓
+    ↓
 Breed Prediction + Confidence Score
 ```
 
@@ -280,15 +280,15 @@ Test Accuracy: 72.0%
 
 ### Accuracy by Breed
 ```
-Murrah Buffalo       ████████████████ 96%
-Jaffrabadi Buffalo   ██████████████ 87%
-Sahiwal             ██████████████ 84%
-Jersey              ████████████ 79%
-Gir                 ███████████ 76%
-Holstein Friesian   ███████████ 74%
-Red Sindhi          ██████████ 68%
-Tharparkar          █████████ 64%
-Nili Ravi           █████████ 62%
+Murrah Buffalo       ████████████████ 96%
+Jaffrabadi Buffalo   ██████████████ 87%
+Sahiwal             ██████████████ 84%
+Jersey              ████████████ 79%
+Gir                 ███████████ 76%
+Holstein Friesian   ███████████ 74%
+Red Sindhi          ██████████ 68%
+Tharparkar          █████████ 64%
+Nili Ravi           █████████ 62%
 ```
 
 ### Confusion Patterns
@@ -302,28 +302,28 @@ Nili Ravi           █████████ 62%
 
 ```
 ┌──────────────────────────────────────────┐
-│ Deep Learning & ML                       │
+│ Deep Learning & ML                       │
 ├──────────────────────────────────────────┤
-│ • TensorFlow 2.13+                       │
-│ • Keras (Functional API)                 │
-│ • MobileNetV2 (Transfer Learning)        │
-│ • NumPy, Pandas, Scikit-learn           │
+│ • TensorFlow 2.13+                       │
+│ • Keras (Functional API)                 │
+│ • MobileNetV2 (Transfer Learning)        │
+│ • NumPy, Pandas, Scikit-learn           │
 └──────────────────────────────────────────┘
 
 ┌──────────────────────────────────────────┐
-│ Web & UI                                 │
+│ Web & UI                                 │
 ├──────────────────────────────────────────┤
-│ • Streamlit 1.28+ (Web Framework)        │
-│ • Custom CSS (Dark theme, animations)    │
-│ • Responsive design (Mobile-friendly)    │
+│ • Streamlit 1.28+ (Web Framework)        │
+│ • Custom CSS (Dark theme, animations)    │
+│ • Responsive design (Mobile-friendly)    │
 └──────────────────────────────────────────┘
 
 ┌──────────────────────────────────────────┐
-│ Image Processing                         │
+│ Image Processing                         │
 ├──────────────────────────────────────────┤
-│ • Pillow (PIL) - Image loading           │
-│ • OpenCV - Image transformations         │
-│ • Matplotlib - Visualization             │
+│ • Pillow (PIL) - Image loading           │
+│ • OpenCV - Image transformations         │
+│ • Matplotlib - Visualization             │
 └──────────────────────────────────────────┘
 ```
 
@@ -381,29 +381,29 @@ streamlit run app.py
 
 ```
 1️⃣ IMAGE UPLOAD
-   └─ User uploads JPG/PNG image
-   
+   └─ User uploads JPG/PNG image
+   
 2️⃣ PREPROCESSING
-   ├─ Load image using Pillow
-   ├─ Resize to 224×224 pixels
-   ├─ Normalize pixel values (0-1)
-   └─ Apply MobileNetV2 preprocessing
-   
+   ├─ Load image using Pillow
+   ├─ Resize to 224×224 pixels
+   ├─ Normalize pixel values (0-1)
+   └─ Apply MobileNetV2 preprocessing
+   
 3️⃣ FEATURE EXTRACTION
-   ├─ Pass through MobileNetV2 backbone
-   ├─ Extract 1280-dimensional features
-   └─ Global Average Pooling
-   
+   ├─ Pass through MobileNetV2 backbone
+   ├─ Extract 1280-dimensional features
+   └─ Global Average Pooling
+   
 4️⃣ CLASSIFICATION
-   ├─ Dense layers process features
-   ├─ Generate 9 breed probabilities
-   └─ Apply Softmax normalization
-   
+   ├─ Dense layers process features
+   ├─ Generate 9 breed probabilities
+   └─ Apply Softmax normalization
+   
 5️⃣ RESULTS
-   ├─ Top predicted breed + confidence
-   ├─ Alternative predictions
-   ├─ Breed information display
-   └─ Confidence visualization
+   ├─ Top predicted breed + confidence
+   ├─ Alternative predictions
+   ├─ Breed information display
+   └─ Confidence visualization
 ```
 
 ### Processing Time
@@ -424,12 +424,12 @@ streamlit run app.py
 - ❌ Cannot reliably identify mixed/crossbred animals
 
 ### Best Practices for Accurate Predictions
-✅ Use clear, well-lit photos  
-✅ Show animal's side profile  
-✅ Avoid extreme angles or cropping  
-✅ Ensure entire animal is visible  
-✅ Use high-resolution images  
-✅ Verify predictions with domain knowledge  
+✅ Use clear, well-lit photos  
+✅ Show animal's side profile  
+✅ Avoid extreme angles or cropping  
+✅ Ensure entire animal is visible  
+✅ Use high-resolution images  
+✅ Verify predictions with domain knowledge  
 
 ---
 
@@ -455,14 +455,14 @@ ls models/
 ```bash
 # Solution: Reduce batch size or image resolution
 # Edit in app.py or predict.py:
-# IMG_SIZE = 224  # Reduce if needed
+# IMG_SIZE = 224  # Reduce if needed
 ```
 
 **Issue: CUDA/GPU errors (if using GPU)**
 ```bash
 # Solution: Use CPU only
-export CUDA_VISIBLE_DEVICES=-1  # On Linux/Mac
-set CUDA_VISIBLE_DEVICES=-1     # On Windows
+export CUDA_VISIBLE_DEVICES=-1  # On Linux/Mac
+set CUDA_VISIBLE_DEVICES=-1     # On Windows
 streamlit run app.py
 ```
 
@@ -476,14 +476,14 @@ streamlit run app.py --server.port 8502
 ## 📚 Dependencies
 
 ```
-tensorflow>=2.13.0           # Deep learning framework
-numpy>=1.24.0               # Numerical computing
-pillow>=10.0.0              # Image processing
-streamlit>=1.28.0           # Web framework
-pandas>=2.0.0               # Data manipulation
-scikit-learn>=1.3.0         # ML utilities
-matplotlib>=3.7.0           # Visualization
-opencv-python>=4.8.0        # Computer vision
+tensorflow>=2.13.0           # Deep learning framework
+numpy>=1.24.0               # Numerical computing
+pillow>=10.0.0              # Image processing
+streamlit>=1.28.0           # Web framework
+pandas>=2.0.0               # Data manipulation
+scikit-learn>=1.3.0         # ML utilities
+matplotlib>=3.7.0           # Visualization
+opencv-python>=4.8.0        # Computer vision
 ```
 
 **Install all at once:**
@@ -616,3 +616,5 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 [⬆ Back to Top](#-pashupehchan---ai-cattle--buffalo-breed-recognition)
 
 </div>
+
+
